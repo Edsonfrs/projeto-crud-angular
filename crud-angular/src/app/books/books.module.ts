@@ -1,9 +1,11 @@
 import { CommonModule } from '@angular/common';
 import { NgModule } from '@angular/core';
-import { MatTableModule } from '@angular/material/table';
+
 
 import { BooksRoutingModule } from './books-routing.module';
 import { BooksComponent } from './books/books.component';
+import { AppMaterialModule } from '../shared/app-material/app-material.module';
+
 
 
 @NgModule({
@@ -14,7 +16,7 @@ import { BooksComponent } from './books/books.component';
   imports: [
     CommonModule,
     BooksRoutingModule,
-    MatTableModule
+    AppMaterialModule
   ]
 })
 export class BooksModule { }
