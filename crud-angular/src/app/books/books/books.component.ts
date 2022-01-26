@@ -1,3 +1,4 @@
+import { Book } from './../model/book';
 import { Component, OnInit } from '@angular/core';
 
 @Component({
@@ -7,7 +8,14 @@ import { Component, OnInit } from '@angular/core';
 })
 export class BooksComponent implements OnInit {
 
-  constructor() { }
+  books: Book[] = [
+    {_id: '1', title: 'Drácula', author: 'Bram Stoker', publisher: 'Editora Darkside', category: 'Ficção Irlandesa'}
+  ];
+  displayedColumns = ['title','author','publisher','category'];
+
+  constructor() {
+    //this.books = [];
+  }
 
   ngOnInit(): void {
   }
