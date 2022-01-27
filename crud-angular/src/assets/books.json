@@ -1,0 +1,8 @@
+[
+  {"_id": "1", "title": "Drácula", "author": "Bram Stoker", "publisher": "Editora Darkside", "category": "Ficção Irlandesa - Terror"},
+  {"_id": "2", "title": "Frankstein", "author": "Mary Shelley", "publisher": "Editora Excelsior", "category": "Ficção Inglesa - Terror"},
+  {"_id": "3", "title": "Livro do Desassossego", "author": "Fernando Pessoa", "publisher": "Editora Literatura Clássica", "category": "Literatura Portuguesa  - Miscelânea"},
+  {"_id": "4", "title": "O Rei de Amarelo", "author": "Robert W. Chambers", "publisher": "Editora Clock Tower", "category": "Ficção Americana  - Literatura Fantástica"},
+  {"_id": "5", "title": "Kwaidan", "author": "Lafcardio Hearn", "publisher": "Editora Pyro Booksr", "category": "Literatura Japonesa  - Horror"},
+  {"_id": "6", "title": "A ilha das almas selvagens", "author": "H.G. Wells", "publisher": "Editora Bandeirola", "category": "Ficção Inglesa"}
+]
