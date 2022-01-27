@@ -10,7 +10,7 @@ import { Observable } from 'rxjs';
 })
 export class BooksComponent implements OnInit {
 
-  books: Observable<Book[]>;
+  books$: Observable<Book[]>;
   displayedColumns = ['title', 'author','publisher','category'];
 
   //booksService: BooksService;
@@ -19,7 +19,7 @@ export class BooksComponent implements OnInit {
   constructor(private booksService: BooksService ) {
     //this.books = [];
     //this.booksService = new BooksService();
-    this.books = this.booksService.list();
+    this.books$ = this.booksService.list();
   }
 
   ngOnInit(): void {

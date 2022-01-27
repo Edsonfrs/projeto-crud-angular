@@ -2,7 +2,7 @@ import { Injectable } from '@angular/core';
 import { HttpClient } from '@angular/common/http';
 
 import { Book } from '../model/book';
-import { first, take, tap } from 'rxjs';
+import { delay, first, take, tap } from 'rxjs';
 
 @Injectable({
   providedIn: 'root'
@@ -17,6 +17,7 @@ export class BooksService {
     return this.httpClient.get<Book[]>(this.API)
     .pipe(
       first(),
+      delay(5000),
       tap(books => console.log(books))
     );
   }
