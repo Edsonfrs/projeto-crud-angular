@@ -1,3 +1,4 @@
+import { BooksService } from './../services/books.service';
 import { Book } from './../model/book';
 import { Component, OnInit } from '@angular/core';
 
@@ -8,16 +9,21 @@ import { Component, OnInit } from '@angular/core';
 })
 export class BooksComponent implements OnInit {
 
-  books: Book[] = [
-    {_id: '1', title: 'Drácula', author: 'Bram Stoker', publisher: 'Editora Darkside', category: 'Ficção Irlandesa'}
-  ];
-  displayedColumns = ['title','author','publisher','category'];
+  books: Book[] = [];
+  displayedColumns = ['title', 'author','publisher','category'];
 
-  constructor() {
+  //booksService: BooksService;
+
+
+  constructor(private booksService: BooksService ) {
     //this.books = [];
+    //this.booksService = new BooksService();
+    //this.books = this.booksService.list();
   }
 
   ngOnInit(): void {
+
+    this.books = this.booksService.list();
   }
 
 }
