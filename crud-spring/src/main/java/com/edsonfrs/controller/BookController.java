@@ -7,6 +7,7 @@ import com.edsonfrs.repository.BookRepository;
 
 import org.springframework.web.bind.annotation.GetMapping;
 import org.springframework.web.bind.annotation.RequestMapping;
+import org.springframework.web.bind.annotation.ResponseBody;
 import org.springframework.web.bind.annotation.RestController;
 
 import lombok.AllArgsConstructor;
@@ -20,7 +21,7 @@ public class BookController {
 
     @GetMapping
     //@RequestMapping(method = RequestMethod.GET)
-    public List<Book> list() {
+    public @ResponseBody List<Book> list() {
         return bookRepository.findAll();
     }
     

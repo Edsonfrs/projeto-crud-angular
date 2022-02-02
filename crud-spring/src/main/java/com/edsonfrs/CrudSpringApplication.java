@@ -23,9 +23,9 @@ public class CrudSpringApplication {
 
 			Book c = new Book();
 			c.setTitle("Drácula");
-			c.setAuthor("Bram");
-			c.setPublisher("Editora DarSide");
-			c.setCategory("Literatura Irlandesa");
+			c.setAuthor("Bram Stoker");
+			c.setPublisher("Editora DarkSide");
+			c.setCategory("Literatura Irlandesa - Horror - Vampiro");
 
 			bookRepository.save(c);
 		};

@@ -9,7 +9,9 @@ import { delay, first, take, tap } from 'rxjs';
 })
 export class BooksService {
 
-  private readonly API = '/assets/books.json';
+  //private readonly API = '/assets/books.json';
+  private readonly API = 'api/books';
+
 
   constructor(private httpClient: HttpClient) { }
 

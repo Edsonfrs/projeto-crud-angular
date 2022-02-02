@@ -13,7 +13,7 @@ import { ErrorDialogComponent } from 'src/app/shared/components/error-dialog/err
 export class BooksComponent implements OnInit {
 
   books$: Observable<Book[]>;
-  displayedColumns = ['title', 'author','publisher','category'];
+  displayedColumns = ['_id','title', 'author','publisher','category'];
 
   //booksService: BooksService;
 
